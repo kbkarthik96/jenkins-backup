@@ -1,0 +1,8 @@
+Started by user [8mha:////4OugaBDpp1YUZo8mVgS2aQ0oj19m+yQsJbi+/Ka+hsLaAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL97MSikozMbACSsssbwgAAAA==[0mkarthik k b 
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+[job1] $ /bin/sh -xe /tmp/jenkins4082428305223162072.sh
++ /home/ec2-user/big2.sh 2 4/
+/tmp/jenkins4082428305223162072.sh: line 2: /home/ec2-user/big2.sh: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

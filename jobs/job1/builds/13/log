@@ -1,0 +1,9 @@
+Started by user [8mha:////4OugaBDpp1YUZo8mVgS2aQ0oj19m+yQsJbi+/Ka+hsLaAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL97MSikozMbACSsssbwgAAAA==[0mkarthik k b 
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+[job1] $ /bin/sh -xe /tmp/jenkins3988802672808854966.sh
++ cd /var/lib/jenkins/workspace/job1
++ ./big2.sh 2 3
+/tmp/jenkins3988802672808854966.sh: line 3: ./big2.sh: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

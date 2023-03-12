@@ -1,0 +1,63 @@
+Started by user [8mha:////4OugaBDpp1YUZo8mVgS2aQ0oj19m+yQsJbi+/Ka+hsLaAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL97MSikozMbACSsssbwgAAAA==[0mkarthik k b 
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test-c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/test-c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kbkarthik96/c-file.git # timeout=10
+Fetching upstream changes from https://github.com/kbkarthik96/c-file.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.1'
+ > git fetch --tags --force --progress -- https://github.com/kbkarthik96/c-file.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3f2e080242a62db5309eba84677358b6d831e912 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3f2e080242a62db5309eba84677358b6d831e912 # timeout=10
+Commit message: "c project"
+ > git rev-list --no-walk 3f2e080242a62db5309eba84677358b6d831e912 # timeout=10
+[test-c-project] $ /bin/sh -xe /tmp/jenkins18382973898212782509.sh
++ cd /var/lib/jenkins/workspace/test-c-project
++ make ABC.exe
+gcc -c main.c
+main.c:2:9: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 |         main() {
+      |         ^~~~
+main.c: In function ‘main’:
+main.c:3:17: warning: implicit declaration of function ‘biggest2’ [-Wimplicit-function-declaration]
+    3 |                 biggest2();
+      |                 ^~~~~~~~
+main.c:4:17: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+    4 |                 factorial();
+      |                 ^~~~~~~~~
+main.c:5:17: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+    5 |                 reverse();
+      |                 ^~~~~~~
+main.c:6:17: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+    6 |                 palindrome();
+      |                 ^~~~~~~~~~
+main.c:7:17: warning: implicit declaration of function ‘sum2’ [-Wimplicit-function-declaration]
+    7 |                 sum2();
+      |                 ^~~~
+gcc -c fact.c
+fact.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | factorial() {
+      | ^~~~~~~~~
+gcc -c big2.c
+big2.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | biggest2() {
+      | ^~~~~~~~
+gcc -c rev.c
+rev.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | reverse() {
+      | ^~~~~~~
+gcc -c pal.c
+pal.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | palindrome() {
+      | ^~~~~~~~~~
+gcc -c sum2.c
+sum2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | sum2() {
+      | ^~~~
+gcc -o ABC.exe main.o big2.o fact.o rev.o pal.o sum2.o
+Finished: SUCCESS
